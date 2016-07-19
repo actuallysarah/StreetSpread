@@ -14,7 +14,7 @@ body{
 }
 
 input.pin{
-    height:40px;
+    height:120px;
     position: relative;
     top: 20px;
     left: 20px;
@@ -33,7 +33,7 @@ div.gallery{
 }
 
 button{
-    height:30px;
-    width: 50px;
+    height:90px;
+    width: 120px;
 }
 
