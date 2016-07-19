@@ -1,0 +1,26 @@
+/*Background image included in case I can never get the map to be its own image to load.
+    Light red: dc5037
+    Dark red: a62f1a
+*/
+body{
+    background-color: dimgrey;
+    background-image: url(images/BG2.jpg);
+}
+
+p{
+    color: #a62f1a;
+    text-align: center;
+    font-family: 'Muli', sans-serif;
+}
+div.buttons{
+    text-align:center;
+    position: fixed;
+    width:100%;
+   bottom: 0;
+}
+
+p.header{
+    font-size: 60px;
+    color: #a62f1a;
+    font-family: 'Lucida Console', sans-serif;
+}

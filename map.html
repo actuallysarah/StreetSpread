@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<!--The way the map is going to work is the divs containing the gallery information will be hidden behind the map. Clicking the pin button will bring the div to the top layer.-->
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+
+    <!--Importing external files-->
+    <!--For now I'm leaving the stylesheet with the background out so I can test overlapping the divs
+    <link rel="stylesheet" type="text/css" href="css/index.css" />-->
+    <link rel="stylesheet" type="text/css" href="css/map.css" />
+    <script src="scripts/map.js"></script>
+
+    <title>map</title>
+</head>
+
+<body>
+    <!--Map "background"-->
+        <img src="css/images/BG2.jpg" style="top: 0px; left: 0px;" id="mapImg"/>
+
+    <!--button that reveals gallery info-->
+        <input type="image" src="css/images/SS-pin.png" onclick="revealDiv('div1')" class="pin" id="pin1"/>
+
+    Div containing gallery info
+    <div class="gallery" id="div1">
+        <p>Gallery 1</p>
+        <p>1 Street RD, gallerysville, MA</p>
+        <p><img src="css/images/SS-BArtist.png" style="width: 70px;"/> <img src="css/images/SS-BArtist.png" style="width: 70px;" /> <img src="css/images/SS-BArtist.png" style="width: 70px;" /></p>
+        <button type="button" onclick="hideDiv('div1')">hide</button>
+    </div>
+
+</body>
+
+</html>

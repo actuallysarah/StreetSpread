@@ -1,0 +1,38 @@
+<!--Home page. Shows map and name of app.-->
+<!DOCTYPE html>
+<html>
+    <head>
+        
+    <!--
+        Customize the content security policy in the meta tag below as needed. Add 'unsafe-inline' to default-src to enable inline JavaScript.
+        For details, see http://go.microsoft.com/fwlink/?LinkID=617521
+    -->
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+        
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+
+        <title>StreetSpread</title>
+    </head>
+   
+   
+    <body>
+        <div><p class="header">Street spread</p></div>
+        <!--The buttons-->
+       <div class="buttons">
+        <a href="buyer.html"><img src="css/images/SS-BArtist.png" width="70px" alt="Buyer Map"/></a>
+        <a href="artistLogin.html"><img src="css/images/SS-BArtist1.png" width="70px" alt="Post a location"/></a>
+        <a href="map.html"><img src="css/images/SS-BLocation.png" width="70px" alt="Map"/></a>
+       </div>
+
+
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="scripts/platformOverrides.js"></script>
+        <script type="text/javascript" src="scripts/index.js"></script>
+        <script src="scripts/jquery-3.0.0.min.js"></script>  
+        <script src="scripts/jquery.mobile-1.4.5.min.js"></script>
+     </body>
+
+</html>

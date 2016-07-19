@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" type="text/css" href="css/artistLogin.css" />
+    <title>Signup</title>
+
+</head>
+
+<body>
+    <!--Adding reference to the script. Will hopefully be inplimented later.-->
+    <script src="signup.js"></script>
+
+    <!--Form for signing up. Doesn't actually do anything with this information. YET-->
+    <form action="profile.html" id="signUp">
+        <p>Sign up:</p>
+        <p>Username:</p>
+        <input type="text" name="username" required/>
+        <p>Password:</p>
+        <input type="text" name="password" id="password" required/>
+        <p>Confirm Password:</p>
+        <input type="text" name="confirm" id="confirmPassword" required/>
+        <p>First Name:</p>
+        <input type="text" name="firstName" required/>
+        <p>Last Name:</p>
+        <input type="text" name="lastName" required/>
+        <p>Email:</p>
+        <input type="text" name="email" required/>
+        <p>Please check to make sure all the information you entered is correct.</p>
+        <p>All profile information will be deleted at the end of the exhibition.</p>
+        <input type="submit" />
+    </form>
+    <div style="position: relative; bottom:10px; right:10px"><a href="artistLogin.html">Back</a></div>
+
+</body>
+</html>

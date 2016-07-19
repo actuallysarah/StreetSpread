@@ -1,0 +1,39 @@
+﻿/*720x1280*/
+body{
+    background-color: dimgray;
+}
+
+#mapImg{
+    position:absolute;
+    top:1px;
+    left:1px;
+    height:100vh;
+    width:auto;
+   overflow: hidden;
+    z-index:0;
+}
+
+input.pin{
+    height:40px;
+    position: relative;
+    top: 20px;
+    left: 20px;
+    z-index: 1;
+}
+
+div.gallery{
+    background-color:white;
+    border-style:solid;
+    border-width: 5px;
+    width: 230px;
+    position: relative;
+    top: 20px;
+    left: 20px;
+    z-index: -999;
+}
+
+button{
+    height:30px;
+    width: 50px;
+}
+
