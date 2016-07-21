@@ -3,21 +3,10 @@ body{
     background-color: dimgray;
 }
 
-#mapImg{
-    position:absolute;
-    top:1px;
-    left:1px;
-    height:100vh;
-    width:auto;
-   overflow: hidden;
-    z-index:0;
-}
 
 input.pin{
     height:120px;
     position: relative;
-    top: 20px;
-    left: 20px;
     z-index: 1;
 }
 
@@ -27,13 +16,21 @@ div.gallery{
     border-width: 5px;
     width: 230px;
     position: relative;
-    top: 20px;
-    left: 20px;
-    z-index: -999;
+	display:none;
 }
 
 button{
-    height:90px;
-    width: 120px;
+    height:60px;
+    width: 90px;
+}
+
+#mapImg{
+    position:absolute;
+    top:1px;
+    left:1px;
+    height:100vh;
+    width:auto;
+   overflow: hidden;
+    z-index:0;
 }
 

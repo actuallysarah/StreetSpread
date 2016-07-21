@@ -17,18 +17,40 @@
 <body>
     <!--Map "background"-->
         <img src="css/images/BG2.jpg" style="top: 0px; left: 0px;" id="mapImg"/>
-
+		
+		
+	<!--TOP: 80 LEFT:80px-->
     <!--button that reveals gallery info-->
-        <input type="image" src="css/images/SS-pin.png" onclick="revealDiv('div1')" class="pin" id="pin1"/>
+    <input type="image" src="css/images/SS-pin.png" onclick="revealDiv('div1')" class="pin" id="pin1" style="top: 80px; left: 80px;"/>
 
-    Div containing gallery info
-    <div class="gallery" id="div1">
+    <!--Div containing gallery info-->
+    <div class="gallery" id="div1" style="top: 80px; left: 80px;">
         <p>Gallery 1</p>
         <p>1 Street RD, gallerysville, MA</p>
-        <p><img src="css/images/SS-BArtist.png" style="width: 70px;"/> <img src="css/images/SS-BArtist.png" style="width: 70px;" /> <img src="css/images/SS-BArtist.png" style="width: 70px;" /></p>
+        <p>
+			<img src="css/images/SS-BArtist.png" style="width: 70px;"/> 
+			<img src="css/images/SS-BArtist.png" style="width: 70px;" /> 
+			<img src="css/images/SS-BArtist.png" style="width: 70px;" />
+		</p>
         <button type="button" onclick="hideDiv('div1')">hide</button>
     </div>
+	
+	<!--TOP: 300 LEFT:100px-->
+    <!--button that reveals gallery info-->
+    <input type="image" src="css/images/SS-pin.png" onclick="revealDiv('div2')" class="pin" id="pin1" style="top: 300px; left: 100px;"/>
 
+    <!--Div containing gallery info-->
+    <div class="gallery" id="div2" style="top: 300px; left: 100px;">
+        <p>Gallery 2</p>
+        <p>2 Street RD, gallerysville, MA</p>
+        <p>
+			<img src="css/images/SS-BArtist.png" style="width: 70px;"/> 
+			<img src="css/images/SS-BArtist.png" style="width: 70px;" /> 
+			<img src="css/images/SS-BArtist.png" style="width: 70px;" />
+		</p>
+        <button type="button" onclick="hideDiv('div2')">hide</button>
+    </div>
+	
 </body>
 
 </html>
