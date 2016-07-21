@@ -1,38 +1,39 @@
-<!--Home page. Shows map and name of app.-->
 <!DOCTYPE html>
-<html>
-    <head>
-        
-    <!--
-        Customize the content security policy in the meta tag below as needed. Add 'unsafe-inline' to default-src to enable inline JavaScript.
-        For details, see http://go.microsoft.com/fwlink/?LinkID=617521
-    -->
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
-        
-        <meta name="format-detection" content="telephone=no">
-        <meta name="msapplication-tap-highlight" content="no">
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-        <link rel="stylesheet" type="text/css" href="css/index.css">
+<!--Home page. Shows the app name and a map. Clicking the logo makes the logo disapprear (fade away) and makes ALL pins fade in. Settings menu "menu" will always be visible.-->
 
-        <title>StreetSpread</title>
-    </head>
-   
-   
-    <body>
-        <div><p class="header">Street spread</p></div>
-        <!--The buttons-->
-       <div class="buttons">
-        <a href="buyer.html"><img src="css/images/SS-BArtist.png" width="70px" alt="Buyer Map"/></a>
-        <a href="artistLogin.html"><img src="css/images/SS-BArtist1.png" width="70px" alt="Post a location"/></a>
-        <a href="map.html"><img src="css/images/SS-BLocation.png" width="70px" alt="Map"/></a>
-       </div>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
 
+    <!--Importing external files-->
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+	<link rel="stylesheet" type="text/css" href="css/map.css" />
+    <script src="scripts/map.js"></script>
+	<style>
+	p{
+		font-size:4vh;
+		line-height:0.8;
+		font-family: "Arial Black"
+	}
+	</style>
+	
+	<title>Home</title>
+</head>
 
-        <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="scripts/platformOverrides.js"></script>
-        <script type="text/javascript" src="scripts/index.js"></script>
-        <script src="scripts/jquery-3.0.0.min.js"></script>  
-        <script src="scripts/jquery.mobile-1.4.5.min.js"></script>
-     </body>
+<body>
+	<!--The map!-->
+	<img src="css/images/BG3.png" id="map">
+	
+	<!--Div containing logo and menu-->
+	<div id="menubar">
+		<h1>
+			streetspread
+		</h1>
+		<p>
+			<a href="menu.html">menu</a> / 
+			<a href="map.html">map</a>
+		</p>
+	</div>
+</body>
 
 </html>
